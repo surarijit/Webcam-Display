@@ -4,6 +4,23 @@ import threading
 from django.http import StreamingHttpResponse
 import cv2
 
+
+"""
+def capture_video_from_cam():
+    cap = cv2.VideoCapture(0)
+    currentFrame = 0
+    while True:
+
+        ret, frame = cap.read()
+
+        # Handles the mirroring of the current frame
+        frame = cv2.flip(frame,1)
+        currentFrame += 1
+
+def show_video_on_page(request):
+    resp = StreamingHttpResponse(capture_video_from_cam())
+    return render(request, 'base.html', {'video': resp})
+ """
 class VideoCamera(object):
     def __init__(self):
         self.video = cv2.VideoCapture(0)

@@ -1,0 +1,61 @@
+body  {
+    color:#fff;
+    text-align:center;
+    background-image: url('lightning-1625550_960_720.jpg');
+
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 12px;
+    font-family: 'Dancing Script', cursive;
+    -webkit-animation: backgroundScroll 5s ease-in 11000;
+    -webkit-animation-fill-mode: both;
+    animation: backgroundScroll 5s ease-in 11000;
+    animation-fill-mode: both;
+    
+}
+
+@keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -180px 0px;}
+}
+@-webkit-keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -180px 0px;}
+}
+
+
+a:link, a:visited {
+    background-color: blue;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    font-size:120%;
+  }
+  
+  a:hover, a:active {
+    background-color: blueviolet;
+    color : whitesmoke;
+    position: absolute;
+  }
+  a {
+    text-decoration: underline;
+    color: blue;
+  }
+
+  p{
+    font-size:160%; 
+    color: white;
+     font-family: courier;
+     text-align: center;
+     top: 50%;
+     postion: absolute;
+  }
+  id{
+      color: white;
+  }

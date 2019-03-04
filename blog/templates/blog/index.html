@@ -1,0 +1,29 @@
+
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+  
+    <title>
+        WELCOME
+    </title>
+
+    <link rel = "stylesheet" href = "{% static 'style1.css' %}">
+
+<head>
+
+</head>
+<body>
+    <h1 style ="font-size:300%; text-align: center ;color: white; padding : 5px;">HOME</h1>
+
+    <p>Hello, I'm Arijit Sur</p>
+    <p>I am trying to be a full stack Web Developer</p>
+    <p>I am pursuing Bachelor of Technology in Electrical Engineering</p>
+    <p>Website without visitors is like a ship lost in the horizon</p>
+    <p>The true ENTREPRENUER IS A RISK TAKER, NOT AN EXCUSE MAKER</p>
+    <p>I have made a web application for capturing live video cam feed</p>
+    <p>You can check it out here</p>
+    <a href = "{% url 'base' %}"><strong>Click here</strong></a>
+
+</body>
+
+</html>

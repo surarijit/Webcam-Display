@@ -1,0 +1,64 @@
+body, html {
+  
+  
+  
+    /* The image used */
+    background-image: url("Ocean-HD-Wallpaper.jpg");
+  
+    /* Full height */
+    
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  body {
+    font: 14px "Open Sans", "Arial", sans-serif;
+  }
+  
+  video {
+    margin-top: 2px;
+    border: 6px solid black;
+  }
+  
+  .button {
+    cursor: pointer;
+    display: block;
+    width: 640px;
+    border: 5px solid pink;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    color:whitesmoke;
+    background-color: darkslateblue;
+    text-decoration: none;
+  }
+  .button:hover, .button:active {
+    background-color: black;
+    color : white;
+    border: 5px solid red;
+  }
+  
+  
+  
+  .left {
+    margin-right: 10px;
+    float: left;
+    width: 640px;
+    padding: 0px;
+  }
+  
+  .right {
+    margin-left: 10px;
+    float: left;
+    width: 640px;
+    padding: 10px;
+  }
+  
+  .bottom {
+    clear: both;
+    padding-top: 10px;
+  }

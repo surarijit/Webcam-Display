@@ -1,1 +1,62 @@
-Hi there this is the page where the video should be
+
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel = "stylesheet" href = "{% static 'style2.css' %}">
+
+        
+        
+        <title>LIVE FEED</title>
+    </head>
+    <body>
+
+  <a href = "{% url 'index' %}" style="color:black; background: white;"><strong>Go Back</strong></a>
+        
+            <h1 style="text-align:center;">CLICK START TO START RECORDING AND STOP TO STOP RECORDING
+            </h1>
+<br>
+ <div class="left">
+  <div id="startButton" class="button">
+    Start
+  </div>
+  <h2 style ="
+  margin-bottom: 4px;
+  font-size:160%; 
+  color: white;
+   font-family: courier;
+   text-align: center;
+   background: black;
+   top: 50%;
+   postion: absolute;">Preview</h2>
+  <video id="preview" width="640" height="480" autoplay muted></video>
+</div>
+ <div class="right">
+  <div id="stopButton" class="button">
+    Stop
+  </div>
+  <h2 style="
+  margin-bottom: 4px;
+  font-size:160%; 
+  color: white;
+   font-family: courier;
+   background: black;
+   text-align: center;
+   top: 50%;
+   postion: absolute;">Recording</h2>
+  <video id="recording" width="640" height="480" controls></video>
+  <a id="downloadButton" class="button">
+    Download
+  </a>
+</div>
+ <div class="bottom">
+  <pre id="log"></pre>
+</div>
+        
+        
+            <script src = "{% static 'app.js' %}">
+            </script>
+        
+    </body>
+</html>
